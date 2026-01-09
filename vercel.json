@@ -5,8 +5,9 @@
     }
   },
   "routes": [
-    { "src": "/index.php", "dest": "/api/index.php" },
-    { "src": "/vcard.php", "dest": "/api/vcard.php" },
-    { "src": "/projet.php", "dest": "/api/projet.php" }
+    { "src": "/vcard", "dest": "/api/vcard.php" },
+    { "src": "/projet", "dest": "/api/projet.php" },
+    { "src": "/index", "dest": "/api/index.php" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
